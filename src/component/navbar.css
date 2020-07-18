@@ -1,0 +1,30 @@
+.navbar{
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+  }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff5e5a;
+  }
+li{
+    float: left;
+    border-right: 1px solid black;
+  }
+li:last-child{
+    border-right: 0 solid black;
+  }
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover{
+    background-color: #ff0e09;
+  }
