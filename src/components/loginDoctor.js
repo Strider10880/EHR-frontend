@@ -2,7 +2,7 @@ import React from "react";
 import {  Link } from "react-router-dom";
 import "../style.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
+import Employee from "./.cph/app"
 class loginDoctor extends React.Component {
     render() {
       return (
@@ -46,7 +46,7 @@ class loginDoctor extends React.Component {
                   <br />
                   <br />
                   <p className="text-center">OR</p>
-                  <button className="btn btn-success">Scan QR CODE</button>
+                  <Employee />
                 </div>
               </div>
             </div>

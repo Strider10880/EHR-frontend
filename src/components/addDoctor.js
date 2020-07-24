@@ -2,7 +2,8 @@ import React from "react";
 import {  Link } from "react-router-dom";
 import "../style.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
+import Employee from "./.cph/app"
+//import ScrollContainer from 'react-indiana-drag-scroll'
 class addDoctor extends React.Component {
     render() {
       return (
@@ -25,6 +26,7 @@ class addDoctor extends React.Component {
             </ul>
           </nav>
           <div className="container" style={{ padding: "12%" }}>
+          
             <h3 className="text-center">ADD A DOCTOR</h3>
             <br />
             <input className="form-control" placeholder="Enter Name..." />
@@ -37,7 +39,9 @@ class addDoctor extends React.Component {
             <br />
             <p className="text-center">OR</p>
             <br />
-            <button className="btn btn-success btn-block">SCAN QR CODE</button>
+            <p className="text-center"><Employee /></p>
+           
+
           </div>
         </div>
       );
