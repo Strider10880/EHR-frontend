@@ -1,30 +1,31 @@
 import React from "react";
 import {  Link } from "react-router-dom";
 import "../style.css";
+import logo from "../../src/Logo.png"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class Admin extends React.Component {
     render() {
       return (
         <div>
-          <nav className="navbar navbar-expand-sm bg-success navbar-light">
+         <nav className="navbar navbar-expand-sm bg-dark navbar-light">
             <div
               className="nav-item active"
-              style={{ color: "white", fontWeight: "bolder" }}
+              style={{ color: "black", fontWeight: "bolder" }}
             >
-              SIH_2020
+              <img src={logo} width="50px" height="50px" />
             </div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link to="/">
-                  <a className="nav-link">
-                    <div style={{ color: "white" }}>HOME</div>
+                  <a className="nav-link" style={{ color: "white" }}>
+                    HOME
                   </a>
                 </Link>
               </li>
             </ul>
           </nav>
-          <div className="container" style={{ padding: "12%" }}>
+          <div className="container" style={{ padding: "10%" }}>
             <Link to="/admin/addDoctor">
               <button className="btn btn-success mx-5">ADD A DOCTOR</button>
             </Link>

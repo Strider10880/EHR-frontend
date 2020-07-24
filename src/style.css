@@ -2,13 +2,14 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background: #86ba9c;
+  background-color: #F8F9FA  !important;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
+
 
 a {
   color: #92badd;
