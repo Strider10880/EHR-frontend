@@ -11,6 +11,8 @@ class Test extends Component {
  
   handleScan = data => {
     if (data) {
+      if(data.startsWith("ethereum:"))
+      data=data.slice(9);
       this.setState({
         result: data
       })
