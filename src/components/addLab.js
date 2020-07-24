@@ -29,7 +29,7 @@ class addLab extends React.Component {
           <div className="container" style={{ padding: "10%" }}>
             <h3 className="text-center">ADD A LAB TECHNICIAN</h3>
             <br />
-            <input className="form-control" placeholder="Enter Name..." />
+            <input className="form-control" placeholder="Enter Name..." onChange={null} />
             <br />
             <Employee />
           </div>

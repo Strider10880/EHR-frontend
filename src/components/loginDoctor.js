@@ -4,8 +4,39 @@ import "../style.css";
 import logo from "../../src/Logo.png"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Employee from "./.cph/app";
+
+//change data variable
+
+let data=[
+  {
+    patientName: 'Bilbo Baggins',
+    patientAddress: '2uy1cz',
+    timestamp: '16:29',
+    ipfsLink: '4JWKXl5YYOTxifB',
+  },
+  {
+    patientName: 'Frodo Baggins',
+    patientAddress: 'laj5d5',
+    timestamp: '18:30',
+    ipfsLink: '4JGKDl5GYOTxfefG',
+  },
+  {
+    patientName: 'Gollum',
+    patientAddress: '4fs65d',
+    timestamp: '19:30',
+    ipfsLink: 'dasgs5d4f6sfd56a',
+  },
+]
 class loginDoctor extends React.Component {
   render() {
+    const detail=data.map(x =>
+      <tr>
+        <td>{x.patientName}</td>
+        <td>{x.patientAddress}</td>
+        <td>{x.timestamp}</td>
+        <td>{x.ipfsLink}</td>
+      </tr>
+      );
     return (
       <div>
         <nav className="navbar navbar-expand-sm bg-dark navbar-light">
@@ -32,7 +63,7 @@ class loginDoctor extends React.Component {
               <h3>DOCTOR'S LOGIN:</h3>
               <hr />
               <div>
-                <button className="btn btn-success btn-sm">
+                <button type='file' className="btn btn-success btn-sm" onClick={null}>
                   UPLOAD REPORT FILE
                 </button>
                 <br />
@@ -53,24 +84,7 @@ class loginDoctor extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Bilbo Baggins</td>
-                  <td>2uy1cz</td>
-                  <td>02:06</td>
-                  <td>4JWKXl5YYOTxifB</td>
-                </tr>
-                <tr>
-                  <td>Bilbo Baggins</td>
-                  <td>2uy1cz</td>
-                  <td>02:06</td>
-                  <td>4JWKXl5YYOTxifB</td>
-                </tr>
-                <tr>
-                  <td>Bilbo Baggins</td>
-                  <td>2uy1cz</td>
-                  <td>02:06</td>
-                  <td>4JWKXl5YYOTxifB</td>
-                </tr>
+                {detail}
               </tbody>
             </table>
           </div>

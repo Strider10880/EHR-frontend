@@ -56,21 +56,21 @@ class application extends React.Component {
           >
             <div className="col-md-4">
               <Link to="/doctor">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}>
                   DOCTOR PROFILE
                 </button>
               </Link>
             </div>
             <div className="col-md-4">
               <Link to="/patient">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}>
                   PATIENT
                 </button>
               </Link>
             </div>
             <div className="col-md-4">
               <Link to="/technician">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}>
                   LAB PROFILE
                 </button>
               </Link>
@@ -82,21 +82,21 @@ class application extends React.Component {
           >
             <div className="col-md-4">
               <Link to="/superadmin">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}>
                   SUPERADMIN
                 </button>
               </Link>
             </div>
             <div className="col-md-4">
               <Link to="/admin">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}>
                   ADMIN
                 </button>
               </Link>
             </div>
             <div className="col-md-4">
               <Link to="/reception/addpatient">
-                <button type="button" className="btn btn-success">
+                <button type="button" className="btn btn-success" onClick={null}> 
                   RECEPTIONIST
                 </button>
               </Link>

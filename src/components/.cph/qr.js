@@ -4,7 +4,7 @@ import QrReader from "react-qr-reader";
 
 class Test extends Component {
   state = {
-    result: "Address...",
+    result: "",
     parab: true,
   };
 

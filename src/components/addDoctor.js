@@ -30,7 +30,7 @@ class addDoctor extends React.Component {
           
             <h3 className="text-center">ADD A DOCTOR</h3>
             <br />
-            <input className="form-control" placeholder="Enter Name..." />
+            <input className="form-control" placeholder="Enter Name..." onChange={null} />
             <br />
             <Employee />
           </div>

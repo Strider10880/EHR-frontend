@@ -3,9 +3,57 @@ import {  Link } from "react-router-dom";
 import "../style.css";
 import logo from "../../src/Logo.png"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Employee from "./.cph/app"
+
+//change data variable
+let data=[
+  {
+    records: 'x0jdnac16',
+    address: '2uy1cz',
+    name: 'Steven Sylvester',
+    roll: 'Patient',
+    timestamp: '02:06'
+  },
+  {
+    records: 'x0gjhad55',
+    address: '5sadf5',
+    name: 'Burke Hedges',
+    roll: 'Patient',
+    timestamp: '15:06'
+  }
+]
+
 class loginPatient extends React.Component {
   render() {
+    const detail=data.map(x => 
+      <tr>
+        <td>{x.records}</td>
+        <td>{x.address}</td>
+        <td>{x.name}</td>
+        <td>{x.roll}</td>
+        <td>{x.timestamp}</td>
+        <td>
+          <Link to="/revoke">
+            <button type="button" class="btn btn-danger btn-sm" onClick={null}>
+              REVOKE
+            </button>
+          </Link>
+        </td>
+        <td>
+          <Link to="/permit">
+            <button
+              type="button"
+              class="btn btn-success btn-sm"
+              data-toggle="modal"
+              data-target="#permitModal"
+              onClick={null}
+            >
+              PERMIT
+            </button>
+          </Link>
+        </td>
+      </tr>
+    );
+
     return (
       <div>
        <nav className="navbar navbar-expand-sm bg-dark navbar-light">
@@ -41,32 +89,7 @@ class loginPatient extends React.Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>x0jdnac16</td>
-                <td>2uy1cz</td>
-                <td>Voldemort</td>
-                <td>Patient</td>
-                <td>02:06</td>
-                <td>
-                  <Link to="/revoke">
-                    <button type="button" class="btn btn-danger btn-sm">
-                      REVOKE
-                    </button>
-                  </Link>
-                </td>
-                <td>
-                  <Link to="/permit">
-                    <button
-                      type="button"
-                      class="btn btn-success btn-sm"
-                      data-toggle="modal"
-                      data-target="#permitModal"
-                    >
-                      PERMIT
-                    </button>
-                  </Link>
-                </td>
-              </tr>
+              {detail}
             </tbody>
           </table>
         </div>

@@ -27,15 +27,15 @@ class Admin extends React.Component {
           </nav>
           <div className="container" style={{ padding: "10%" }}>
             <Link to="/admin/addDoctor">
-              <button className="btn btn-success mx-5">ADD A DOCTOR</button>
+              <button className="btn btn-success mx-5" onClick={null}>ADD A DOCTOR</button>
             </Link>
             <Link to="/admin/addLab">
-              <button className="btn btn-success mx-4">
+              <button className="btn btn-success mx-4" onClick={null}>
                 ADD A LAB TECHNICIAN
               </button>
             </Link>
             <Link to="/admin/addReception">
-              <button className="btn btn-success mx-5">ADD A RECEPTIONIST</button>
+              <button className="btn btn-success mx-5" onClick={null}>ADD A RECEPTIONIST</button>
             </Link>
           </div>
         </div>

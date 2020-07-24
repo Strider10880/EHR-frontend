@@ -3,6 +3,7 @@ import {  Link } from "react-router-dom";
 import "../style.css";
 import logo from "../../src/Logo.png"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Employee from "./.cph/app";
 
 class revoke extends React.Component {
     render() {
@@ -28,18 +29,10 @@ class revoke extends React.Component {
           <div className=" container" style={{ padding: "10%" }}>
             <h3 className="text-center">Revoke</h3>
             <br />
-            <button className="btn btn-success btn-sm">UPLOAD REPORT FILE</button>
+            <button type='file' className="btn btn-success btn-sm" onClick={null}>UPLOAD REPORT FILE</button>
             <br />
             <br />
-            <input className="form-control" placeholder="Enter Address" />
-            <br />
-            <button type="submit" className="btn btn-success">
-              Submit
-            </button>
-            <br />
-            <br />
-            <p className="text-center">OR</p>
-            <button className="btn btn-success btn-block">Scan QR CODE</button>
+            <Employee />
           </div>
         </div>
       );

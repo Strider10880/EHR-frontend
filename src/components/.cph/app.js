@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../../style.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
 import QR from "./qr";
+
 class Employee extends Component {
   constructor(props) {
     super(props);
