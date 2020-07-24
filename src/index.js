@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Router, Route, Link, BrowserRouter } from "react-router-dom";
 import { Switch } from "react-router";
 import "./style.css";
+import logo from "./Logo.png";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import loginDoctor from "./components/loginDoctor.js";
 import addPatient from "./components/addPatient.js";
@@ -20,18 +21,18 @@ class application extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="=container-fluid bg-light text-dark">
-          <nav className="navbar navbar-expand-sm bg-success navbar-light">
+        <div className="bg-light text-dark">
+          <nav className="navbar navbar-expand-sm bg-dark navbar-light">
             <div
               className="nav-item active"
               style={{ color: "black", fontWeight: "bolder" }}
             >
-              SIH_2020
+              <img src={logo} width="50px" height="50px" />
             </div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link to="/">
-                  <a className="nav-link" style={{ color: "white !important" }}>
+                  <a className="nav-link" style={{ color: "white" }}>
                     HOME
                   </a>
                 </Link>
@@ -75,7 +76,6 @@ class application extends React.Component {
               </Link>
             </div>
           </div>
-
           <div
             className="row text-center my-5 "
             style={{ paddingBottom: "10%" }}
@@ -102,6 +102,36 @@ class application extends React.Component {
               </Link>
             </div>
           </div>
+        </div>
+        <div
+          className="footer-clean"
+          style={{
+            color: "white",
+            backgroundColor: "#2e5666",
+            fontWeight: "500",
+            padding:"5%",
+          }}>
+          <footer>
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-sm-4 col-md-3 item">
+                  <p
+                    style={{
+                      color: "white",
+                      fontSize: "15px",
+                      lineHeight: "28px",
+                      fontWeight: 100,
+                    }}>
+                    Phone : 1800 2255 00 <br />
+                    E-mail: info@ehealthrecord.com
+                  </p>
+                </div>
+                <p className="copyright" style={{ marginTop: "10px"}}>
+                    EHR&nbsp; ©&nbsp; All Rights reserved. 2020
+                  </p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     );
