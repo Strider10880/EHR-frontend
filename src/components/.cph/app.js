@@ -26,7 +26,7 @@ class Employee extends Component {
             marginTop: "5%",
             marginBottom: "5%",
           }}
-          placeholder="Enter Public Address"></input>
+          placeholder="Enter Public Address" name='addr'></input>
         <p className="text-center">OR</p>
         <button
           className="btn btn-success btn-block my-2"
@@ -42,7 +42,7 @@ class Employee extends Component {
           {this.state.cam ? <QR /> : "Click on button to read Qr data"}{" "}
         </p>
 
-        <button
+        <button type='submit'
           onClick={() => {
             this.setState({ parab: !this.state.parab });
           }}

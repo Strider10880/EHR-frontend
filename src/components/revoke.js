@@ -29,10 +29,12 @@ class revoke extends React.Component {
           <div className=" container" style={{ padding: "10%" }}>
             <h3 className="text-center">Revoke</h3>
             <br />
+            <form action='/'>
             <button type='file' className="btn btn-success btn-sm" onClick={null}>UPLOAD REPORT FILE</button>
             <br />
             <br />
             <Employee />
+            </form>
           </div>
         </div>
       );

@@ -28,7 +28,9 @@ class superAdmin extends React.Component {
         <div className="container" style={{ padding: "10%" }}>
           <h3 className="text-center">ADD AN ADMIN</h3>
           <br />
+          <form action='/'>
           <Employee />
+          </form>
         </div>
       </div>
     );

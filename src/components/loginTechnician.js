@@ -64,12 +64,14 @@ class loginTechnician extends React.Component {
               <h3>TECHNICIAN'S LOGIN:</h3>
               <hr />
               <div>
+                <form action='/'>
                 <button type='file' className="btn btn-success btn-sm" onClick={null}>
                   UPLOAD REPORT FILE
                 </button>
                 <br />
                 <br />
                 <Employee />
+                </form>
               </div>
             </div>
           </div>

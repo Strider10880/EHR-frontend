@@ -28,9 +28,11 @@ class addPatient extends React.Component {
           <div className="container" style={{ padding: "10%" }}>
             <h3 className="text-center">ADD A PATIENT</h3>
             <br />
-            <input className="form-control" placeholder="Enter Patient's Name" onChange={null}/>
+            <form action='/'>
+            <input className="form-control" placeholder="Enter Patient's Name" onChange={null} name='patName' />
             <br />
             <Employee />
+            </form>
           </div>
         </div>
       );

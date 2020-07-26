@@ -28,9 +28,11 @@ class addReception extends React.Component {
           <div className="container" style={{ padding: "10%" }}>
             <h3 className="text-center">ADD A RECEPTIONIST</h3>
             <br />
-            <input className="form-control" placeholder="Enter Name..." onChange={null}/>
+            <form action='/'>
+            <input className="form-control" placeholder="Enter Name..." onChange={null} name='recepName'/>
             <br />
             <Employee />
+            </form>
           </div>
         </div>
       );

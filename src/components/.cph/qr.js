@@ -37,7 +37,7 @@ class Test extends Component {
         </div>
         <input className="form-control"
           value={this.state.result}
-          style={{ width: "100%", height: "100%", marginTop: "5%" }}></input>
+          style={{ width: "100%", height: "100%", marginTop: "5%" }} name='addr'></input>
       </div>
     );
   }

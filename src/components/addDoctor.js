@@ -27,12 +27,13 @@ class addDoctor extends React.Component {
             </ul>
           </nav>
           <div className="container" style={{ padding: "10%" }}>
-          
+          <form action='/' >
             <h3 className="text-center">ADD A DOCTOR</h3>
             <br />
-            <input className="form-control" placeholder="Enter Name..." onChange={null} />
+            <input className="form-control" placeholder="Enter Name..." onChange={null} name='docName'/>
             <br />
-            <Employee />
+              <Employee />
+            </form>
           </div>
         </div>
       );
