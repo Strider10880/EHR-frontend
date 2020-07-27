@@ -32,14 +32,20 @@ class loginPatient extends React.Component {
         <td>{x.roll}</td>
         <td>{x.timestamp}</td>
         <td>
-          <Link to="/revoke">
+          <Link to={{
+            pathname: '/revoke',
+            state: {recRevoke: x.records}
+          }}>
             <button type="button" class="btn btn-danger btn-sm" onClick={null}>
               REVOKE
             </button>
           </Link>
         </td>
         <td>
-          <Link to="/permit">
+        <Link to={{
+            pathname: '/permit',
+            state: {recPermit: x.records}
+          }}>
             <button
               type="button"
               class="btn btn-success btn-sm"
@@ -49,7 +55,7 @@ class loginPatient extends React.Component {
             >
               PERMIT
             </button>
-          </Link>
+        </Link>
         </td>
       </tr>
     );

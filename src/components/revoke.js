@@ -32,6 +32,7 @@ class revoke extends React.Component {
             <form action='/'>
             <button type='file' className="btn btn-success btn-sm" onClick={null}>UPLOAD REPORT FILE</button>
             <br />
+            {this.props.location.state.recRevoke /* recRevoke key from loginPatient */} 
             <br />
             <Employee />
             </form>
