@@ -7,11 +7,11 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //change data variable
 let data=[
   {
-    records: 'x0jdnac16',
-    address: '2uy1cz',
+    records: '0xb292019A5B13972b110a56A5773288DDd6D51842',
+    address: '0x6BE4F4658d8c27b253C59797a791FE39d64Cf78A',
     name: 'Steven Sylvester',
-    roll: 'Patient',
-    timestamp: '02:06'
+    roll: 'doctor',
+    timestamp: '30-07-2020'
   },
   {
     records: 'x0gjhad55',
@@ -26,7 +26,7 @@ class loginPatient extends React.Component {
   render() {
     const detail=data.map(x => 
       <tr>
-        <td>{x.records}</td>
+        <td><a href={"https://ipfs.infura.io/ipfs/" + x.record} target='_blank'>{x.records}</a></td>
         <td>{x.address}</td>
         <td>{x.name}</td>
         <td>{x.roll}</td>
@@ -82,7 +82,8 @@ class loginPatient extends React.Component {
         <div className="container">
           <br />
           <br />
-          <table class="table">
+          {/*below line is changed, style is added. */}
+          <table class="table" style={{tableLayout: 'fixed', overflow: 'hidden', wordWrap: 'break-word'}}>
             <thead class="thead-dark">
               <tr>
                 <th>Records</th>
